@@ -50,10 +50,11 @@ public class Janela extends JFrame{
             calculo *= Double.parseDouble(cotacao.getText());
             if(imposto.isSelected()){
                 calculo*=1.6;
-            }
-            if(icms.isSelected()){
+                 if(icms.isSelected()){
                 calculo*=1.18;
+                }
             }
+           
             JOptionPane.showMessageDialog(null, "Resultado:"+calculo,"Calculo do Valor",1);
         }
     }
